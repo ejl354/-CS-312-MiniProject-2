@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 
-app.use(express.urlencoded({ extended: true })); // to parse form data
+app.use(express.urlencoded({ extended: true })); 
 app.set('view engine', 'ejs');
 
 
