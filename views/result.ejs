@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunscreen Result</title>
+</head>
+<body>
+  <% if (error) { %>
+    <h2 style="color:#d9ff00;"><%= error %></h2>
+    <a href="/">Try again</a>
+  <% } else { %>
+    <h1>UV Index: <%= data.uvIndex %></h1>
+    <% if (data.needSunscreen) { %>
+      <p>Yes, you should apply sunscreen today!</p>
+    <% } else { %>
+      <p>No sunscreen needed today.</p>
+    <% } %>
+    <a href="/">Check another location</a>
+  <% } %>
+</body>
+</html>
